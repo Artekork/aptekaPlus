@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Аптека+</string>
+    <string name="pash">АНДРЕЙ КУЛЛ</string>
+    <string name="Mail">E-mail</string>
+    <string name="Pass">Пароль</string>
+    <string name="RepPass">Повторите пароль</string>
+    <string name="DontRep">Пароли не совпадают!</string>
+
+    <string name="InvalidUser">Такого пользователя не существует</string>
+    <string name="UserExist">Такой пользователь уже существует</string>
+    <string name="InvalidPass">Неправильный пароль</string>
+    <string name="InputMail">Укажите логин</string>
+    <string name="InputPass">Укажите пароль</string>
+
+    <string name="Autoriz">Вход</string>
+    <string name="Registr">Регистрация</string>
+    <string name="Enter">Войти</string>
+    <string name="Create">Создать аккаунт</string>
+    <string name="Create1">Создать</string>
+    <string name="IfRegistr">Войти</string>
+    <string name="IfLogin">Зарегистрироваться</string>
+
+
+    <string name="NamePharm">Аптека №1</string>
+    <string name="LocatePharm">Пупкино, 122а</string>
+    <string name="WorkPharm">11.00-22.00</string>
+    <string name="Close">Закрыто</string>
+    <string name="Open">Открыто</string>
+</resources>

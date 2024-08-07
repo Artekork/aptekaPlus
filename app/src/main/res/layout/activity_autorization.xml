@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Autorization">
+
+
+    <Button
+        android:id="@+id/autorization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/Enter"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/pass_autor"
+        app:layout_constraintTop_toBottomOf="@+id/pass_autor" />
+
+    <EditText
+        android:id="@+id/pass_autor"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:hint="@string/Pass"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintEnd_toEndOf="@+id/mail_autor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mail_autor"
+        app:layout_constraintTop_toBottomOf="@+id/mail_autor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/main"
+        android:textDirection="firstStrongLtr"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/Autoriz"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/autorization_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/main_light"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="onClickGoReg"
+        android:text="@string/Create"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/autorization"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pass_autor"
+        app:layout_constraintTop_toBottomOf="@+id/pass_autor" />
+
+    <EditText
+        android:id="@+id/mail_autor"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textWebEmailAddress"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/error_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="@color/Wrong"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/pass_autor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pass_autor"
+        app:layout_constraintTop_toBottomOf="@+id/pass_autor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

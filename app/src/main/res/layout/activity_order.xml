@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Order">
+
+    <ImageView
+        android:id="@+id/backProf1"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:onClick="onClickBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Оформление заказа"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/ALL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ALL"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/main_light"
+        android:backgroundTint="@color/main_light"
+        app:cardCornerRadius="45px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/data"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/orderMiddle"
+                app:cardCornerRadius="45px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="6dp">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Имя"
+                        android:textColor="@color/orderText"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/surname1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Фамилия"
+                        android:textColor="@color/orderText"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                    <TextView
+                        android:id="@+id/numb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Номер телефона"
+                        android:textColor="@color/orderText"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/surname1" />
+
+                    <TextView
+                        android:id="@+id/loc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Адрес"
+                        android:textColor="@color/orderText"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/numb1" />
+
+                    <TextView
+                        android:id="@+id/mail1"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/orderMiddle"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Эл. Почта"
+                        android:textColor="@color/orderText"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/loc1"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/name11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Даниэль"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/name1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/name1" />
+
+                    <TextView
+                        android:id="@+id/surname11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Кондрателло"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/surname1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/surname1" />
+
+                    <TextView
+                        android:id="@+id/numb11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="+375 (44) 749 25 12"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/numb1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/numb1"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/loc11"
+                        android:layout_width="160dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Ул. Гришина, д. 122, кв 5"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/loc1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/loc1" />
+
+                    <TextView
+                        android:id="@+id/mail11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="vseparoli2228@gmail.com"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mail1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mail1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pozjel"
+                android:layout_width="220dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/orderMiddle"
+                app:cardCornerRadius="45px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName2"
+                        android:layout_width="212dp"
+                        android:layout_height="81dp"
+                        android:layout_marginStart="4dp"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:hint="Ваши пожелания"
+                        android:inputType="textLongMessage"
+                        android:textColor="@color/orderText"
+                        android:textColorHint="@color/orderText"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/errorTxt"
+                android:layout_width="234dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text='Мы не можем оформить заказ без почты, адреса и имени. Пожалуйста, зайдите в "Мой профиль" и заполните данные'
+                android:textColor="@color/orderText"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="@+id/pozjel"
+                app:layout_constraintTop_toBottomOf="@+id/pozjel" />
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Итоговая стоимость:"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/pozjel"
+                app:layout_constraintTop_toBottomOf="@+id/errorTxt" />
+
+            <TextView
+                android:id="@+id/allPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="10.80р."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textPrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/accept"
+        android:layout_width="297dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/ALL"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/ALL"
+        app:layout_constraintTop_toBottomOf="@+id/ALL"
+        app:srcCompat="@drawable/accept" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

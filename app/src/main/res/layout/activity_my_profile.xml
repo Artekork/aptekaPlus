@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".drawerbar.MyProfile">
+
+    <ImageView
+        android:id="@+id/hr3"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/TextGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_Prof"
+        app:srcCompat="@drawable/arrow" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MyProfileProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MyProfileProf">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/userwhite" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/hr2"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/TextGray"
+        app:layout_constraintBottom_toTopOf="@+id/commonInf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:srcCompat="@drawable/arrow" />
+
+    <EditText
+        android:id="@+id/nameInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="textShortMessage"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/nameProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameProf"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/surNameInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="textShortMessage"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/surNameProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/surNameProf" />
+
+    <EditText
+        android:id="@+id/locationInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="textShortMessage"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/locationProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationProf" />
+
+    <EditText
+        android:id="@+id/mailInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="textWebEmailAddress"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/mailProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mailProf" />
+
+    <EditText
+        android:id="@+id/passInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="textShortMessage"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/passProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passProf" />
+
+    <EditText
+        android:id="@+id/phoneInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_light"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/Mail"
+        android:inputType="numberSigned"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mainLight"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phoneProf" />
+
+    <ImageView
+        android:id="@+id/backProf"
+        android:layout_width="67dp"
+        android:layout_height="23dp"
+        android:onClick="onClickBack"
+        app:layout_constraintBottom_toBottomOf="@+id/MyProfileProf"
+        app:layout_constraintEnd_toStartOf="@+id/MyProfileProf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MyProfileProf"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/back"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/MyProfileProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Мой профиль"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commonInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Общие сведения"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/privacyInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Настройки аккаунта"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/commonInf"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/commonInf"
+        app:layout_constraintTop_toBottomOf="@+id/changePhotoProf" />
+
+    <TextView
+        android:id="@+id/nameProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Имя:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commonInf" />
+
+    <TextView
+        android:id="@+id/surNameProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Фамилия:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProf" />
+
+    <TextView
+        android:id="@+id/changePhotoProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Изменить фото:"
+        android:textColor="@color/main_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surNameProf" />
+
+    <TextView
+        android:id="@+id/phoneProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Н. телефона:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailProf" />
+
+    <TextView
+        android:id="@+id/phoneProf3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Удалить аккаунт:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/phoneProf"
+        app:layout_constraintTop_toBottomOf="@+id/hr3" />
+
+    <TextView
+        android:id="@+id/locationProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Адрес:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginProf" />
+
+    <TextView
+        android:id="@+id/mailProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Эл. почта:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passProf" />
+
+    <TextView
+        android:id="@+id/passProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Пароль:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationProf" />
+
+    <TextView
+        android:id="@+id/loginProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Логин:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacyInf" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="Сохранить"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/loginProfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="loginProf"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginProf"
+        app:layout_constraintStart_toStartOf="@+id/locationInp"
+        app:layout_constraintTop_toTopOf="@+id/loginProf" />
+
+    <TextView
+        android:id="@+id/error_Prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/Wrong"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/phoneProf"
+        app:layout_constraintTop_toBottomOf="@+id/phoneProf" />
+
+    <ImageView
+        android:id="@+id/deleteUser"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneProf3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phoneProf3"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627532108014",
+    "firebase_url": "https://apteka-4c0b0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "apteka-4c0b0",
+    "storage_bucket": "apteka-4c0b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627532108014:android:1765523098af18341463ff",
+        "android_client_info": {
+          "package_name": "com.arekok.ink.apteka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627532108014-612q5hfpqhdt2dmpl07svukvhitebphs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtRiDgt6IOwEQup3qcgi0TeGZgfz8xr8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627532108014-612q5hfpqhdt2dmpl07svukvhitebphs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

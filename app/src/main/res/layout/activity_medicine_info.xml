@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="isData"
+            type="com.arekok.ink.apteka.medicineNew.MedicineData" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".medicineNew.MedicineInfo">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medImg">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/medStructure"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/white"
+                    android:text="@{isData.structure}"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/sostav"
+                    app:layout_constraintTop_toBottomOf="@+id/sostav" />
+
+                <ImageView
+                    android:id="@+id/calendar1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/calendar1" />
+
+                <TextView
+                    android:id="@+id/medHow"
+                    android:layout_width="281dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="asdwasd"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="@+id/srok2"
+                    app:layout_constraintTop_toBottomOf="@+id/srok2" />
+
+                <ImageView
+                    android:id="@+id/question1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/calendar1"
+                    app:layout_constraintStart_toStartOf="@+id/calendar1"
+                    app:layout_constraintTop_toBottomOf="@+id/calendar1"
+                    app:srcCompat="@drawable/question1" />
+
+                <TextView
+                    android:id="@+id/sostav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Состав:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/constrain1"
+                    app:layout_constraintStart_toStartOf="@+id/medHow"
+                    app:layout_constraintTop_toTopOf="@+id/constrain1" />
+
+                <ImageView
+                    android:id="@+id/constrain1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="@+id/question1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/question1"
+                    app:layout_constraintTop_toBottomOf="@+id/medHow"
+                    app:srcCompat="@drawable/composition1" />
+
+                <TextView
+                    android:id="@+id/srok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Срок годности:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/calendar1"
+                    app:layout_constraintStart_toEndOf="@+id/calendar1"
+                    app:layout_constraintTop_toTopOf="@+id/calendar1" />
+
+                <TextView
+                    android:id="@+id/srok2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Способ применения:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/question1"
+                    app:layout_constraintStart_toStartOf="@+id/srok"
+                    app:layout_constraintTop_toTopOf="@+id/question1" />
+
+                <TextView
+                    android:id="@+id/medSrok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="asdasd"
+                    android:textColor="@color/TextGray"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/srok"
+                    app:layout_constraintStart_toEndOf="@+id/srok"
+                    app:layout_constraintTop_toTopOf="@+id/srok"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="TextContrastCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/medName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@{isData.nameM}"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/medImg"
+            android:layout_width="312dp"
+            android:layout_height="207dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:imageUrl="@{isData.img}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medName" />
+
+        <ImageView
+            android:id="@+id/backProf1"
+            android:layout_width="76dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:onClick="onClickBack"
+            app:layout_constraintBottom_toBottomOf="@+id/medName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/medName"
+            app:srcCompat="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
